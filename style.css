@@ -2,209 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-.navbar-brand img {
-  height: 40px;
-}
-
-.shop {
-  position: relative;
-}
-
-.badge {
-  font-size: 0.8rem;
-}
-
-.hero-section {
-  background-color: #f9f7f4;
-  padding: 50px 0;
-}
-
-.hero-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.hero-subtext {
-  color: #666;
-}
-
-.hero-image {
-  max-width: 100%;
-}
-
-.shop-now-btn {
-  background-color: #ffc107;
-  border: none;
-  font-size: 1.2rem;
-  padding: 10px 30px;
-}
-
-.highlight {
-  color: #22c55e;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 2rem;
-  }
-
-  .hero-section {
-    text-align: center;
-  }
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-.feature-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.feature-box img {
-  width: 50px;
-  height: auto;
-  margin-bottom: 15px;
-}
-.feature-box h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.feature-box p {
-  font-size: 1rem;
-  color: #6c757d;
-}
-
-.category-card {
-  position: relative;
-  background-image: url("./image/Groffer-bann_categ1\ \(1\).jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 20px;
-  width: 270px;
-  border-radius: 10px;
-  height: 100%;
-}
-.category-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-.category-card h2 {
-  z-index: 1;
-  position: relative;
-}
-.category-card p {
-  z-index: 1;
-  position: relative;
-}
-.product-card {
-  border-radius: 15px;
-  transition: box-shadow 0.3s ease;
-}
-.product-card:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-.product-card img {
-  border-radius: 10px;
-  max-width: 100%;
-}
-.add-to-cart {
-  position: absolute;
-  top: 3px;
-  right: 7px;
-
-  border-radius: 20px;
-  padding: 6px;
-  cursor: pointer;
-}
-.price {
-  font-size: 1.25rem;
-  color: #007bff;
-}
-
-.stars {
-    color: #ffc107; /* Gold for filled stars */
-}
-
-
-.stac{
-    margin-top: -9px;
-    
-}
-
-.beg{
-   margin-left: -73px;
-   margin-top: 10px;
-}
-
-
-.special-offer {
-  background-color: #f5f0e6;
-  padding: 40px;
-  text-align: center;
-}
-.fruit-box-img {
-  max-width: 100%;
-  height: auto;
-}
-.countdown {
-  color: #2cb380;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.countdown-1{
-  color: #000000;
-  font-size: 15px;
-}
- 
-.carrot-img {
-  position: absolute;
-  right: 0;
-  top: -21%;
-  width: 350px;
-  height: 300px;
-  margin-left:230px;
-}
-.product-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.product-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.product-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.product-price {
-  color: #28a745;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.Lifestyle{
-background-image: url(./image/Main-services_bg1.jpg);
-background-size: cover;
- background-size: cover; background-position: center;
- background-position: center;
- padding: 50px 0;
 }
 
 .lifestyle-card {
@@ -258,7 +56,7 @@ background-size: cover;
   background-color: #e3eef3;
 }
 .cards-set:hover{
-  transform: scale(1.01);
+  transform: scale(1.03);
   cursor: pointer;
 }
 .back-clr-1{
@@ -269,4 +67,27 @@ background-size: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s;
+}
+.set-hovr:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.hero-text{
+  font-size: 70px;
+  font-weight: bolder;
+}
+.psitn-1{
+  position: relative;
+}
+.psitn-2{
+position: absolute;
+top: 135px;
+left: 38px;
+}
+@media (max-width: 680px) {
+  .hero-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 }
