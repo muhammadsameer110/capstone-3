@@ -6,11 +6,8 @@
 }
 
 .lifestyle-card {
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
   transition: transform 0.2s;
 }
 .lifestyle-card:hover {
@@ -19,7 +16,6 @@
 }
 .lifestyle-icon {
   font-size: 40px;
-  margin-bottom: 10px;
 }
 .back-imd-set{
   background-image: url(./backimg.png);
@@ -29,12 +25,7 @@
 
 }
 .promo-card {
-  background-color: #f5f5f5;
   border-radius: 10px;
-  padding: 20px;
-  text-align: left;
-  display: flex;
-  align-items: center;
 }
 .promo-text {
   flex: 1;
@@ -44,28 +35,22 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.2s;
-  padding: 10px;
+
 }
 .card-setting:hover{
   transform: scale(1.03);
   cursor: pointer;
 }
-.back-clr{
-  background-color: #e3eef3;
-}
+
 .cards-set:hover{
   transform: scale(1.03);
   cursor: pointer;
 }
-.back-clr-1{
-  background-color: #f5efdf;
-}
+
 .cards-set{
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.2s;
 }
 .set-hovr:hover{
@@ -83,6 +68,11 @@
 position: absolute;
 top: 135px;
 left: 38px;
+}
+.back-clr{background-color:rgb(227, 238, 243);}
+.back-clr-1{background-color: rgb(245, 239, 223);}
+#formCard {
+  display: none; /* Initially hidden */
 }
 @media (max-width: 680px) {
   .hero-text {
