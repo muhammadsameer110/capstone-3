@@ -15,15 +15,15 @@ document.querySelector(".signInForm").addEventListener("submit",function (Event)
     window.location.href="./index.html";
   } );
 
-
+  //the cart
   let cart = [];
 
-  // Function to update the cart display
+
   function updateCart() {
-    const cartCount = document.querySelector('.badge.beg'); // Cart count element
-    const cartTotal = document.querySelector('.my-cart-total'); // Cart total element
-    const cartItemsContainer = document.querySelector('.cart-items'); // Cart items container
-    const cartSubtotal = document.querySelector('.cart-subtotal'); // Cart subtotal
+    const cartCount = document.querySelector('.badge.beg'); 
+    const cartTotal = document.querySelector('.my-cart-total'); 
+    const cartItemsContainer = document.querySelector('.cart-items'); 
+    const cartSubtotal = document.querySelector('.cart-subtotal'); 
   
     // Update the number of items in the cart
     cartCount.textContent = cart.length;
@@ -33,7 +33,6 @@ document.querySelector(".signInForm").addEventListener("submit",function (Event)
     cartTotal.textContent = `€${total.toFixed(2)}`;
     cartSubtotal.textContent = `€${total.toFixed(2)}`;
   
-    // Update the cart items in the dropdown
     if (cart.length === 0) {
       cartItemsContainer.innerHTML = '<p class="text-center">Your cart is empty.</p>';
     } else {
@@ -57,22 +56,22 @@ document.querySelector(".signInForm").addEventListener("submit",function (Event)
     }
   }
   
-  // Function to add an item to the cart
+  
   function addToCart(name, price, image) {
-    cart.push({ name, price, image }); // Add item to the cart
-    updateCart(); // Update the cart display
+    cart.push({ name, price, image }); 
+    updateCart(); 
   }
   
-  // Function to remove an item from the cart
+
   function removeFromCart(index) {
     cart.splice(index, 1); // Remove item from the cart array
-    updateCart(); // Update the cart display
+    updateCart(); //  cart display
   }
   
-  // Attach event listeners to the "Add to Cart" buttons
+  // event listeners 
   document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', event => {
-      event.preventDefault(); // Prevent the default link behavior
+      event.preventDefault(); 
       const name = button.getAttribute('data-name');
       const price = parseFloat(button.getAttribute('data-price'));
       const image = button.getAttribute('data-image');
@@ -80,6 +79,6 @@ document.querySelector(".signInForm").addEventListener("submit",function (Event)
     });
   });
   
-  // Initial cart update
+  // cart update
   updateCart();
   

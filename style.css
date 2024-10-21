@@ -20,8 +20,7 @@
 .back-imd-set{
   background-image: url(./backimg.png);
   height: 70vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 
 }
 .promo-card {
